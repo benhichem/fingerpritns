@@ -14,10 +14,10 @@ const browser = await plugin.launch({
 });
 
 const page = await browser.newPage();
-await page.setViewport({
+/*await page.setViewport({
   height: 1200,
   width: 1200,
-});
+});*/
 
 await page.goto(url, { timeout: 0 });
 await page.waitForSelector("body > div > div.website-logo > a > img", {
